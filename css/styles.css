@@ -111,6 +111,15 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 color: var(--color-accent);
 }
 
+.nav-list.is-active::after {
+width: 48px;
+height: 4px;
+left: 451px;
+top: 76px;
+background: var(--color-accent);
+border-radius: 2px;
+}
+
 .nav-list-item {
 display: block;
 padding-top: 32px;
@@ -548,6 +557,13 @@ left: 0;
 width: 100%;
 height: 100%;
 background-color: rgba(0, 0, 0, 0.2);
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.backdrop.is-hidden {
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
 }
 
 .modal {
@@ -562,10 +578,18 @@ background-color: rgba(0, 0, 0, 0.2);
 
 .modal-close-button {
   position:absolute;
-  top:0;
-  right: 0;
+  top:8px;
+  right: 8px;
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
 }
 
 /*=======PORTFOLIO PADGE=======*/
