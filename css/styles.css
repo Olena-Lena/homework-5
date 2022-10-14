@@ -714,8 +714,8 @@ transform: translatey(100%);
 transition: transform 250ms ease;
 }
 
-.thumb-secondary:hover .overlay {
-transform: translatey(0);
+.work-example:hover.overlay,
+{transform: translatey(0);
 }
 
 .secondary-label {
