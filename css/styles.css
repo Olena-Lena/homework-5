@@ -714,7 +714,8 @@ transform: translatey(100%);
 transition: transform 250ms ease;
 }
 
-.work-example:hover.overlay,
+.work-example:hover .overlay,
+.work-example:focus .overlay
 {transform: translatey(0);
 }
 
